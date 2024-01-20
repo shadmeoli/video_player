@@ -2,6 +2,7 @@
 // import { app, Menu } from "electron";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcomescreen from "./screens/Welcomescreen.tsx";
+import Player from "./screens/Player.tsx"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Welcomescreen />} />
+        <Route path="/playback" element={<Player />} />
       </Routes>
     </BrowserRouter>
   );
