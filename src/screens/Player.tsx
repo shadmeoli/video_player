@@ -11,7 +11,6 @@ export default function Player() {
   // const navigate = useNavigate();
   const [counter, setCounter] = React.useState<number>(0)
 
-
   return (
     <>
       <div className="h-screen w-screen">
