@@ -1,9 +1,3 @@
-/**
- * for navigation between pages you can uncomment the import and 
- * its declaration inside the component
- * 
- * You can also uncomment the user effect to view notifications
- */
 import React from "react";
 import Logo from "../assets/ndc.png";
 // import { countReducer } from "../store/homeStore";
@@ -15,7 +9,6 @@ import Windowheader from "../components/Windowheader";
 export default function Player() {
   // const navigate = useNavigate();
   const [counter, setCounter] = React.useState<number>(0)
-  // const store = useCounter()
 
 
   return (
