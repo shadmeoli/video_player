@@ -2,9 +2,8 @@
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
-
-
-export default function Windowheader({ title }) {
+export default function Windowheader(props: any) {
+  const { title } = props;
 
   const navigate = useNavigate();
 
@@ -25,4 +24,4 @@ export default function Windowheader({ title }) {
       </div>
     </div>
   )
-}
+};
