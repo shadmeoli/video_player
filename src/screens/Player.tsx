@@ -18,12 +18,6 @@ export default function Player() {
   // const store = useCounter()
 
 
-  // React.useEffect(() => {
-  //   new Notification("Congratualations", {
-  //     body: "you have successfully setup your electron app"
-  //   })
-  // })
-
   return (
     <>
       <div className="h-screen w-screen">
