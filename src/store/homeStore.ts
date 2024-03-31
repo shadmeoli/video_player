@@ -1,12 +1,16 @@
-import { create } from 'zustand'
-import type { State } from "../interfaces/home"
+import { create } from "zustand";
 
-const countReducer = create((set) => {
-  return {
-    counter: 0,
-    incrCounter: () => set((state: State) => ({ counter: state.counter + 1 })),
-    resetCounter: () => set(() => ({ counter: 0 })),
-  };
-});
+type State = {
+  count: number;
+};
 
-export { countReducer }
+type Actions = {
+  increment: (qty: number) => void;
+  decrement: (qty: number) => void;
+};
+
+const useCountStore = create<State & Actions>((set) => ({
+  count: 0,
+  increment: (qty: number) => set((state) => ({ count: state.count + qty })),
+  decrement: (qty: number) => set((state) => ({ count: state.count - qty })),
+}));
